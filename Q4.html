@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling a table.</title>
+    <style>
+        table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead
+ {
+  background-color: rgb(16, 139, 5);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: le;
+}
+
+/*  */
+
+tfoot {
+  background-color: rgb(223, 223, 223);
+  text-align: left;
+}
+
+/* tfoot td {
+  
+} */
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price per Unit</th>
+            <th scope="col">Description</th>
+            <th scope="col">Total Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Product 1</th>
+            <td>2</td>
+            <td>$10</td>
+            <td>This is product 1</td>
+            <td class="total-price">$20</td>
+          </tr>
+          <tr>
+            <th scope="row">Product 2</th>
+            <td>3</td>
+            <td>$20</td>
+            <td>This is product 2</td>
+            <td>$60</td>
+          </tr>
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="4">Sum</th>
+            <td>$80</td>
+          </tr>
+        </tfoot>
+      </table>
+      
+</body>
+</html>
